@@ -1,0 +1,38 @@
+.best {
+  background: url('../../../img/bg-best.png') center center/ cover no-repeat;
+}
+
+.best__list {
+  display: flex;
+}
+
+.best__item {
+  flex: 1;
+  margin-right: 15 px;
+  text-align: center;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.best__icon {
+  display: inline-block;
+}
+
+.best__title {
+  color: $black;
+}
+
+.best__desc-title {
+  font-family: 'Lifehack-Medium';
+  color: $black;
+  font-size: 24px;
+}
+
+.best__desc-content {
+font-family: ubuntu;
+font-size: 14px;
+font-weight: 300;
+}
