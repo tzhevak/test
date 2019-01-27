@@ -453,7 +453,7 @@ footer {
   text-decoration: none; }
 
 .hero {
-  background: url("/img/hero-bg.png") center center/cover no-repeat; }
+  background: url("../../../img/hero-bg.png") center center/cover no-repeat; }
 
 .hero__container {
   display: -webkit-box;
