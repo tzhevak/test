@@ -514,7 +514,7 @@ footer {
   margin-bottom: 45px; }
 
 .best {
-  background: url("/img/bg-best.png") center center/cover no-repeat; }
+  background: url("../img/bg-best.png") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
