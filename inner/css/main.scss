@@ -5,19 +5,19 @@ $black: #2f3234;
 $red: #e35028;
 
 //normalize
-@import '/settings/normalize.scss';
+@import 'settings/normalize.scss';
 
 //setups
-@import '/fonts/fonts.scss';
-@import './layout/layout.scss';
+@import 'fonts/fonts.scss';
+@import 'layout/layout.scss';
 
 //blocks
-@import '/blocks/header.scss';
-@import '/blocks/hero.scss';
-@import '/blocks/btn.scss';
-@import '/blocks/title.scss';
-@import '/blocks/best.scss';
-@import '/blocks/reviews.scss';
+@import 'blocks/header.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/title.scss';
+@import 'blocks/best.scss';
+@import 'blocks/reviews.scss';
 
 //fixed-menu
-@import '/fixed-menu/fixed-menu.scss';
+@import 'fixed-menu/fixed-menu.scss';
