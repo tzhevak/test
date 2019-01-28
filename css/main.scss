@@ -1,0 +1,23 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//normalize
+@import '../css/settings/normalize.scss';
+
+//setups
+@import '../css/fonts/fonts.scss';
+@import '../css/layout/layout.scss';
+
+//blocks
+@import '../css/blocks/header.scss';
+@import '../css/blocks/hero.scss';
+@import '../css/blocks/btn.scss';
+@import '../css/blocks/title.scss';
+@import '../css/blocks/best.scss';
+@import '../css/blocks/reviews.scss';
+
+//fixed-menu
+@import '../css/fixed-menu/fixed-menu.scss';
