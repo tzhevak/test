@@ -5,14 +5,14 @@ $black: #2f3234;
 $red: #e35028;
 
 //normalize
-@import '../css/settings/normalize.scss';
+@import './settings/normalize.scss';
 
 //setups
-@import '../css/fonts/fonts.scss';
-@import '../css/layout/layout.scss';
+@import './fonts/fonts.scss';
+@import './layout/layout.scss';
 
 //blocks
-@import '../css/blocks/header.scss';
+@import './blocks/header.scss';
 @import '../css/blocks/hero.scss';
 @import '../css/blocks/btn.scss';
 @import '../css/blocks/title.scss';
