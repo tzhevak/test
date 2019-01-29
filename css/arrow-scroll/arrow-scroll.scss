@@ -1,5 +1,8 @@
 .arrow-scroll {
-  position: fixed;
-  top: 650px;
-  left: 650px;
+  position: absolute;
+  width: 29px;
+  height: 14px;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

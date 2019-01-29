@@ -8,7 +8,7 @@
 
 .best__item {
   flex: 1;
-  margin-right: 15 px;
+  margin-right: 36px;
   text-align: center;
 
 
@@ -19,16 +19,22 @@
 
 .best__icon {
   display: inline-block;
+  margin-bottom: 33px;
+}
+
+.title_color_black {
+  color: $black;
 }
 
 .best__title {
-  color: $black;
+  margin-bottom: 45px;
 }
 
 .best__desc-title {
   font-family: 'Lifehack-Medium';
   color: $black;
   font-size: 24px;
+  margin-bottom: 25px;
 }
 
 .best__desc-content {
