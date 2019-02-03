@@ -10,6 +10,7 @@ $red: #e35028;
 //setups
 @import './fonts/fonts.scss';
 @import './layout/layout.scss';
+@import './settings/media.scss';
 
 //blocks
 @import './blocks/header.scss';
@@ -19,6 +20,8 @@ $red: #e35028;
 @import './blocks/best.scss';
 @import './blocks/reviews.scss';
 @import './promo/promo.scss';
+@import './blocks/team.scss';
+@import './blocks/accordeon.scss';
 
 //fixed-menu
 @import './fixed-menu/fixed-menu.scss';
