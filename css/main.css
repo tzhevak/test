@@ -416,6 +416,10 @@ footer {
   padding-top: 13px;
   margin-bottom: 80px; }
 
+.logo {
+  width: 92px;
+  height: 69px; }
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,6 +541,10 @@ footer {
   font-family: ubuntu;
   font-size: 14px;
   font-weight: 300; }
+
+.meat-icon {
+  width: 97px;
+  height: 89px; }
 
 .reviews {
   background: #000;
