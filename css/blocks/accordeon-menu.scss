@@ -1,0 +1,90 @@
+.menu-accordeon {
+  height: 100%;
+  z-index: 1;
+
+  &__list, &__item {
+    height: inherit;
+    display: flex;
+  }
+}
+
+.active-menu {
+  .menu-accordeon__trigger-text{
+    color: $yellow;
+  }
+  .menu-accordeon__content {
+    width: 540px;
+  }
+
+  .menu-accordeon__text{
+    padding: 62px 37px 62px 33px;
+  }
+}
+
+.menu-accordeon__item {
+  height: 100%;
+  &.active {
+    .menu-accordeon__trigger-text {
+      color: #f9b43b;
+    }
+  }
+}
+
+.menu-accordeon__trigger {
+  width: 80px;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}
+
+.menu-accordeon__trigger-text {
+  display: flex;
+  align-items: flex-end;
+  font-size: 40px;
+  color: #fff;
+  @include gagalin;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 50%;
+  margin-top: rem(-20px);
+}
+
+.menu-accordeon__content {
+  position: relative;
+  height: inherit;
+  height: 100%;
+  float: left;
+  background: rgba(#2f2f2f, .93);
+  width: 0;
+  overflow: hidden;
+  
+}
+
+.menu-accordeon__text {
+  font-weight: 300;
+  line-height: 24px;
+  @include ubuntu(light);
+  color: #fff;
+}
