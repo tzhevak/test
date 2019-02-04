@@ -1,24 +1,28 @@
 .socials__list {
   display: flex;
-  position: relative;
-  top: 50%;
-  align-items: center;
+  width: 100%;
 }
 
 .socials__item {
-  margin-left: rem(10px);
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .socials__link {
-  display: inline-block;
-  max-width: rem(23px);
-  max-height: rem(20px);
-  opacity: .3;
-  transition: .3s;
-
+  display: flex;
   &:hover {
-    opacity: 1;
+    svg {
+      fill: rgba(#fff, 1);
+    }
   }
+}
+
+.socials__icon {
+fill: rgba(#fff, 0.3);
+width: 20px;
+height: 20px;
 }
 
 

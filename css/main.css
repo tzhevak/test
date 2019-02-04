@@ -350,7 +350,9 @@ body {
   min-width: 940px; }
 
 .container {
-  width: 940px;
+  position: relative;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto; }
 
 .section {
@@ -390,6 +392,9 @@ ul {
   margin: 0; }
   ul li {
     list-style: none; }
+
+a {
+  text-decoration: none; }
 
 p {
   padding: 0;
@@ -915,27 +920,19 @@ footer {
 
 .section-footer {
   background-image: url("../img/footer.jpg");
-  height: 60px; }
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  height: 60px;
+  padding: 4px 0; }
 
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 13px; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .footer__col {
   display: -webkit-box;
@@ -950,34 +947,52 @@ footer {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300; }
 
 .footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 24px;
+  font-weight: 700;
   color: #e45028; }
+
+.phone__icon {
+  fill: #e45028;
+  width: 12px;
+  height: 11px;
+  margin-right: 8px; }
 
 .socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  top: 50%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  width: 100%; }
 
 .socials__item {
-  margin-left: 0.625rem; }
+  margin-left: 20px; }
+  .socials__item:first-child {
+    margin-left: 0; }
 
 .socials__link {
-  display: inline-block;
-  max-width: 1.4375rem;
-  max-height: 1.25rem;
-  opacity: .3;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s; }
-  .socials__link:hover {
-    opacity: 1; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .socials__link:hover svg {
+    fill: white; }
+
+.socials__icon {
+  fill: rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 20px; }
 
 .fixed-menu {
   position: fixed;
