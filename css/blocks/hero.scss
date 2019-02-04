@@ -9,19 +9,19 @@
 }
 
 .hero__order-btn {
-  margin-left: 15px;
+  margin-left: rem(15px);
 }
 
 .hero__content-desc {
   color: #fff;
-  font-size: 55px;
+  font-size: rem(55px);
   font-family: 'Lifehack-Medium';
-  margin-left: 15px;
+  margin-left: rem(15px);
 }
 
 .menu__link {
   color: #fff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-family: ubuntu;
   text-transform: uppercase;
 }

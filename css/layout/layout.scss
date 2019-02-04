@@ -1,10 +1,13 @@
+html {
+  font-size: 16px;
+}
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-size: rem(16px);
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,23 +16,24 @@ body {
 }
 
 .wrapper {
+  position: relative;
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: 940px;
+  //min-width: 940px;
 }
 
 //выравнивает контент по центру
 .container {
   position: relative;
   width: 95%;
-  max-width: 940px;
+  max-width: rem(940px);
   margin: 0 auto; 
 }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 
   &_centered {
     .title {

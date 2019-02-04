@@ -1,7 +1,7 @@
 .section-footer {
   background-image: url('../img/footer.jpg');
-  height: 60px;
-  padding: 4px 0;
+  height: rem(60px);
+  padding: rem(4px) 0;
   }
 
 .footer__container {
@@ -17,26 +17,26 @@
   color: #fff;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
   font-weight: 300;
   font-style: normal;
-  line-height: 24px;
+  line-height: rem(24px);
   @include ubuntu;
 }
 
 .footer__phone {
   display: flex;
   align-items: center;
-  line-height: 24px;
+  line-height: rem(24px);
   font-weight: 700;
   color: $orange;
 }
 
 .phone__icon {
   fill: #e45028;
-  width: 12px;
-  height: 11px;
-  margin-right: 8px;
+  width: rem(12px);
+  height: rem(11px);
+  margin-right: rem(8px);
 }
 
 
