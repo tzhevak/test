@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
-  margin-bottom: 80px;
+  padding-top: rem(13px);
+  margin-bottom: rem(80px);
 }
 
 .logo {
-  width: 92px;
-  height: 69px;
+  width: rem(92px);
+  height: rem(69px);
 }
 .header__buttons {
   display: flex;
@@ -31,12 +31,12 @@
   }
   &:after{
     content: "";
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     display: inline-block;
     background: #fff;
-    margin: 0 10px;
+    margin: 0 rem(10px);
   }
 }
 

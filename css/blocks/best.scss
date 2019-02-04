@@ -8,7 +8,7 @@
 
 .best__item {
   flex: 1;
-  margin-right: 36px;
+  margin-right: rem(36px);
   text-align: center;
 
 
@@ -19,7 +19,7 @@
 
 .best__icon {
   display: inline-block;
-  margin-bottom: 33px;
+  margin-bottom: rem(33px);
 }
 
 .title_color_black {
@@ -27,23 +27,23 @@
 }
 
 .best__title {
-  margin-bottom: 45px;
+  margin-bottom: rem(45px);
 }
 
 .best__desc-title {
   font-family: 'Lifehack-Medium';
   color: $black;
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: rem(24px);
+  margin-bottom: rem(25px);
 }
 
 .best__desc-content {
 font-family: ubuntu;
-font-size: 14px;
+font-size: rem(14px);
 font-weight: 300;
 }
 
 .best__icon {
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
 }

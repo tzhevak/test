@@ -13,11 +13,11 @@
     color: $yellow;
   }
   .menu-accordeon__content {
-    width: 540px;
+    width: rem(540px);
   }
 
   .menu-accordeon__text{
-    padding: 62px 37px 62px 33px;
+    padding: rem(62px) rem(37px) rem(62px) rem(33px);
   }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .menu-accordeon__trigger {
-  width: 80px;
+  width: rem(80px);
   display: flex;
   align-items: flex-start;
   height: 100%;
@@ -58,7 +58,7 @@
 .menu-accordeon__trigger-text {
   display: flex;
   align-items: flex-end;
-  font-size: 40px;
+  font-size: rem(40px);
   color: #fff;
   @include gagalin;
   text-align: center;
@@ -84,7 +84,7 @@
 
 .menu-accordeon__text {
   font-weight: 300;
-  line-height: 24px;
+  line-height: rem(24px);
   @include ubuntu(light);
   color: #fff;
 }

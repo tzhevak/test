@@ -1,11 +1,11 @@
 .btn {
   background: $red;
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: rem(8px) rem(15px);
+  border-radius: rem(5px);
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: rem(13px);
   font-family: 'Ubuntu';
 
   &_background_black {
