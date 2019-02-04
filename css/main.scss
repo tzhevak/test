@@ -4,13 +4,18 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //normalize
 @import './settings/normalize.scss';
+@import './settings/media.scss';
 
 //setups
 @import './fonts/fonts.scss';
 @import './layout/layout.scss';
-@import './settings/media.scss';
 
 //blocks
 @import './blocks/header.scss';
