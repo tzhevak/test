@@ -2,12 +2,21 @@
   background-image: url('../img/footer.jpg');
   height: rem(60px);
   padding: rem(4px) 0;
+
+  @include phones {
+    height: rem(120px);
+  }
   }
 
 .footer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 

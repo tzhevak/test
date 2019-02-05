@@ -10,10 +10,6 @@
 
 .hero__order-btn {
   margin-left: rem(15px);
-
-  @include tablets {
-    display: none;
-  }
 }
 
 .hamburger-menu-link {
@@ -52,11 +48,29 @@
 	}
 }
 
+.hero__content-text {
+  @include tablets {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+  }
+}
+
 .hero__content-desc {
   color: #fff;
   font-size: rem(55px);
   font-family: 'Lifehack-Medium';
   margin-left: rem(15px);
+
+  @include tablets {
+    font-size: rem(45px);
+    line-height: rem(45px); 
+  }
+
+  @include phones {
+    font-size: rem(55px);
+    
+  }
 }
 
 .menu__link {

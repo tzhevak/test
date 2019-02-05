@@ -1,6 +1,16 @@
+.socials {
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .socials__list {
   display: flex;
   width: 100%;
+
+
 }
 
 .socials__item {
