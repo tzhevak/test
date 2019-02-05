@@ -25,6 +25,11 @@
       opacity: 1;
     }
   }
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
 }
 
 .reviews__item-hover {
@@ -47,6 +52,11 @@
 .subtitle {
   font-family: 'Gagalin-Regular';
   margin-bottom: rem(15px);
+
+  @include phones {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .reviews__text {
@@ -55,11 +65,29 @@
   font-weight: 300;
   margin-bottom: rem(15px);
   max-width: rem(225px);
+
+  @include phones {
+    display: none;
+  }
 }
 
 .reviews__wrap{
 display: flex;
 align-content: center;
 flex-direction: column;
+}
+
+.btn_background_black {
+  @include phones {
+    display: none;
+  }
+}
+
+.btn_review__phone {
+  display: none;
+
+  @include phones {
+    display: inline-block;
+  }
 }
 

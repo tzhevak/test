@@ -15,9 +15,16 @@
   .menu-accordeon__content {
     width: rem(540px);
   }
-
+  
   .menu-accordeon__text{
     padding: rem(62px) rem(37px) rem(62px) rem(33px);
+
+    @include phones {
+      padding: rem(40px) rem(10px) rem(30px) rem(10px);
+    }
+  }
+  @include phones {
+    width: rem(400px);
   }
 }
 
@@ -51,7 +58,10 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
 
+  @include phones {
+    width: 2rem;
   }
 }
 
@@ -79,7 +89,6 @@
   background: rgba(#2f2f2f, .93);
   width: 0;
   overflow: hidden;
-  
 }
 
 .menu-accordeon__text {
@@ -87,4 +96,8 @@
   line-height: rem(24px);
   @include ubuntu(light);
   color: #fff;
+
+  @include phones {
+    font-size: rem(10px);
+  }
 }
