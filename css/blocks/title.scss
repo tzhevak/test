@@ -5,7 +5,7 @@
   line-height: 1.1;
 
   @include phones {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: rem(45px);
+    line-height: rem(45px);
   }
 }

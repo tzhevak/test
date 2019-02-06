@@ -3,11 +3,28 @@
 }
 
 .order-title {
-  margin-bottom: rem(22px);
+margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }
 
 .form__wrap {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 17.5%;
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__column {
@@ -22,6 +39,10 @@
 .form__row {
   display: flex;
   margin-bottom: rem(14px);
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__block {
@@ -124,3 +145,4 @@
 .form-clean {
   margin-top: rem(6px);
 }
+
