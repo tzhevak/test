@@ -554,8 +554,12 @@ p {
   text-decoration: none;
   font-size: 0.8125rem;
   font-family: 'Ubuntu'; }
+  .btn:hover {
+    background-color: #c1401e; }
   .btn_background_black {
     background: #2f3234; }
+    .btn_background_black:hover {
+      background-color: #1f2122; }
   .btn_review__phone {
     background: #2f3234; }
 

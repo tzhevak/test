@@ -8,8 +8,16 @@
   font-size: rem(13px);
   font-family: 'Ubuntu';
 
+  &:hover{
+    background-color: #c1401e;
+  }
+
   &_background_black {
     background: $black;
+
+    &:hover {
+      background-color: #1f2122;
+    }
   }
 
   &_review__phone {
