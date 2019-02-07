@@ -43,6 +43,7 @@ body {
 .section {
   height: 100vh;
   min-height: rem(650px);
+  position: relative;
 
   &_centered {
     .title {
@@ -89,11 +90,6 @@ a {
 p {
   padding: 0;
   margin: 0;
-}
-
-footer {
-  position: relative;
-  width: 100%;
 }
 
 * {
