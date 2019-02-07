@@ -14,7 +14,6 @@
 
   @include tablets {
     align-items: center; 
-    margin-bottom: rem(30px);
   }
 
   //&:last-child {
@@ -28,9 +27,6 @@
       &:before {
         transform: rotate(-180deg) translateY(40%);
       }
-    }
-    .team-accordeon__content-wrap {
-      height: var(--auto-height);
     }
   }
 
@@ -72,13 +68,19 @@
   overflow: hidden;
   height: 0;
   transition: height;
+}
 
-
+.team-active {
+  height: rem(240px);
 }
 
 .team-accordeon__content {
   padding-left: rem(19px);
   padding-bottom: rem(18px);
+
+  @include tablets {
+    padding-left: 0;
+  }
 }
 
 .user {
@@ -125,14 +127,11 @@
   font-size: rem(14px);
   color: #fff;
   margin-bottom: rem(14px);
-  max-width: rem(208px);
-  margin-right: rem(0px);
 }
 
 .team-accordeon__text-content{
   @include ubuntu(light);
   color: #fff;
   font-size: rem(14px);
-  margin: 0;
   line-height: rem(24.01px);
 }

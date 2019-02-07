@@ -14,6 +14,9 @@
   }
   .menu-accordeon__content {
     width: rem(540px);
+
+    @include tablets {
+      width: rem(480px);
   }
   
   .menu-accordeon__text{
@@ -23,8 +26,15 @@
       padding: rem(40px) rem(10px) rem(30px) rem(10px);
     }
   }
+}
+
   @include phones {
-    width: rem(400px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+
   }
 }
 
