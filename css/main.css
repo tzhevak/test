@@ -591,8 +591,8 @@ p {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-right: 2.25rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   .best__item:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
