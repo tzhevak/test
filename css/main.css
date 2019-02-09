@@ -1311,7 +1311,7 @@ p {
 .comment {
   height: 6.8125rem; }
 
-.order__radio {
+.radio-btns__label {
   position: relative;
   white-space: nowrap;
   margin-right: 1.25rem;
@@ -1323,23 +1323,49 @@ p {
   -ms-flex-align: center;
   align-items: center; }
 
-.order__radio-elem {
+.radio-btns__radio {
   position: absolute;
   top: 0;
   left: -624.9375rem; }
 
-.order__radio-fake {
+.radio-btns__radio-fake {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   background: #fff;
   position: relative; }
-  .order__radio-fake .order__check-fake_active {
-    border-radius: 0%; }
+  .radio-btns__radio-fake:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0rem;
+    height: 0rem;
+    border-radius: 50%;
+    background: #e35028;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: width .3s, height .3s;
+    -o-transition: width .3s, height .3s;
+    transition: width .3s, height .3s; }
 
-.order__radio-elem:checked + .order__radio-fake:after {
+.radio-btns__radio:checked + .radio-btns__radio-fake:after {
   width: 0.5rem;
   height: 0.5rem; }
+
+.order__radio_checkbox .radio-btns__radio-fake {
+  border-radius: 0rem; }
+
+.order__radio_checkbox .radio-btns__radio + .radio-btns__radio-fake:after {
+  background: transparent; }
+
+.order__radio_checkbox .radio-btns__radio:checked + .radio-btns__radio-fake:after {
+  background: url("../img/form-check.png") 50% no-repeat transparent;
+  background-size: contain;
+  width: 0.9375rem;
+  height: 0.9375rem; }
 
 .order__radio-title {
   font-size: 0.875rem;
@@ -1356,14 +1382,17 @@ p {
 .form__row-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 2rem; }
 
 .form__btn-order {
   margin-right: 1.25rem;
   cursor: pointer; }
 
-.form-clean {
-  margin-top: 0.375rem; }
+.btn-clean {
+  margin-top: 0.375rem;
+  background-color: transparent;
+  border: none; }
 
 .fixed-menu {
   position: fixed;
