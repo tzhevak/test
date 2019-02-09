@@ -425,41 +425,33 @@
                     <div class="form__row">
                       <label for="" class="form__block">
                         <div class="form__block-title">Комментарий</div>
-                        <input type="text" class="form__block-input comment">
+                        <textarea type="text" class="form__block-input comment"></textarea>
                       </label>
                     </div>
                     <div class="order__form-buttons">
-                      <div class="form__row-container">
-                        <div class="form__row">
-                          <label for="" class="order__radio">
-                            <input class="order__radio-elem" name="payment" type="radio">
-                            <div class="order__radio-fake"></div>
-                            <div class="order__radio-title">Потребуется сдача</div>
+                      <div class="form__row">
+                        <label class="radio-btns__label">
+                            <input class="radio-btns__radio" name="payment" type="radio">
+                            <span class="radio-btns__radio-fake"></span>
+                            <span class="order__radio-title">Потребуется сдача</span>
                           </label>
-                        </div>
-                        <div class="form__row">
-                          <label for="" class="order__radio">
-                            <input class="order__radio-elem" name="payment" type="radio">
-                            <div class="order__radio-fake order__radio-fake_active">
-                              <img src="img/order-dot.png" alt="">
-                            </div>
-                            <div class="order__radio-title">Оплата по карте</div>
-                          </label>
-                        </div>
+                        <label class="radio-btns__label">
+                            <input class="radio-btns__radio" name="payment" type="radio" checked>
+                            <span class="radio-btns__radio-fake"></span>
+                            <span class="order__radio-title">Оплата по карте</span>
+                        </label>
                       </div>           
-                       <div class="form__row">
-                          <label for="" class="order__radio">
-                            <input class="order__radio-elem" name="payment" type="radio">
-                            <div class="order__check-fake_active">
-                              <img src="img/form-check.png" alt="">
-                            </div>
-                            <div class="order__radio-title">Не перезванивать</div>
-                          </label>
+                       <div class="form__row-container">
+                          <label class="radio-btns__label order__radio_checkbox">
+                              <input class="radio-btns__radio" name="callback" type="radio" checked>
+                              <span class="radio-btns__radio-fake"></span>
+                              <span class="order__radio-title">Не перезванивать</span>
+                            </label>
                         </div>
                         <div class="form__row">
                           <div class="form__row-container">
                             <div class="btn form__btn-order">Заказать</div>
-                            <div class="order__radio-title form-clean">Очистить</div>
+                            <button type="reset" class="order__radio-title btn-clean">Очистить</button>
                           </div>            
                         </div>
                     </div>
