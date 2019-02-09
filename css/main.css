@@ -637,8 +637,7 @@ p {
   @media screen and (max-width: 480px) {
     .best__desc-title {
       margin-bottom: 10px;
-      text-align: left;
-      margin-left: 25px; } }
+      text-align: left; } }
 
 .best__desc-content {
   font-family: ubuntu;
@@ -646,8 +645,7 @@ p {
   font-weight: 300; }
   @media screen and (max-width: 480px) {
     .best__desc-content {
-      text-align: left;
-      margin-left: 25px; } }
+      text-align: left; } }
 
 .best__icon {
   width: 6.0625rem;
@@ -823,6 +821,18 @@ p {
       -ms-flex-pack: center;
       justify-content: center; } }
 
+.team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .team-accordeon__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,9 +915,6 @@ p {
   -o-transition: height;
   transition: height; }
 
-.team-active {
-  height: 15rem; }
-
 .team-accordeon__content {
   padding-left: 1.1875rem;
   padding-bottom: 1.125rem; }
@@ -931,11 +938,16 @@ p {
       margin-bottom: 0.625rem; } }
 
 .team-accordeon__pic {
-  text-align: center;
-  width: 30%; }
+  text-align: center; }
   @media screen and (max-width: 768px) {
     .team-accordeon__pic {
-      margin-bottom: 0.9375rem; } }
+      margin-bottom: 0.9375rem;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .team-accordeon__img {
   width: 6.25rem;
@@ -952,7 +964,8 @@ p {
   text-align: left; }
   @media screen and (max-width: 768px) {
     .team-accordeon__text {
-      text-align: center; } }
+      text-align: center;
+      max-width: 70%; } }
 
 .team-accordeon__title {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -1153,7 +1166,6 @@ p {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 1.125rem;
   font-weight: 300;
   font-style: normal;
   line-height: 1.5rem;
@@ -1243,7 +1255,6 @@ p {
       padding: 0; } }
 
 .form__column {
-  margin-right: 1.25rem;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
