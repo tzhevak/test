@@ -1030,7 +1030,7 @@ p {
   width: 33.75rem; }
   @media screen and (max-width: 768px) {
     .active-menu .menu-accordeon__content {
-      width: 30rem; } }
+      display: none; } }
   @media screen and (max-width: 480px) {
     .active-menu .menu-accordeon__content {
       display: none; } }

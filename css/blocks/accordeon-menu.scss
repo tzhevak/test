@@ -18,7 +18,7 @@
     width: rem(540px);
 
     @include tablets {
-      width: rem(480px);
+      display: none;
   }
 
   @include phones {
