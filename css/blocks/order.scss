@@ -24,6 +24,7 @@ margin-bottom: rem(22px);
 
   @include phones {
     padding: 0;
+    padding-left: 0;
   }
 }
 
@@ -52,6 +53,10 @@ margin-bottom: rem(22px);
 
   &:first-child {
     margin-right: 0;
+
+    @include phones {
+      margin-left: 0;
+    }
   }
 }
 
@@ -169,6 +174,10 @@ margin-bottom: rem(22px);
 .form__row-container {
   display: flex;
   margin-bottom: rem(32px);
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__btn-order {

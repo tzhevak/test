@@ -11,6 +11,10 @@
   position: absolute;
   top: 10%;
   left: 10%;
+
+  @include phones {
+    left: 5%;
+  }
 }
 
 .title_color_white {
