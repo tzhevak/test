@@ -16,14 +16,6 @@
     width: rem(540px);
     height: 100%;
 
-    @include tablets {
-      display: none;
-  }
-
-  @include phones {
-    display: none;
-  }
-  
  .menu-accordeon__text{
    padding: rem(62px) rem(37px) rem(62px) rem(33px);
    height: 100%;

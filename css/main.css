@@ -1037,12 +1037,6 @@ p {
 .menu-accordeon__item.active .menu-accordeon__content {
   width: 33.75rem;
   height: 100%; }
-  @media screen and (max-width: 768px) {
-    .menu-accordeon__item.active .menu-accordeon__content {
-      display: none; } }
-  @media screen and (max-width: 480px) {
-    .menu-accordeon__item.active .menu-accordeon__content {
-      display: none; } }
   .menu-accordeon__item.active .menu-accordeon__content .menu-accordeon__text {
     padding: 3.875rem 2.3125rem 3.875rem 2.0625rem;
     height: 100%; }
