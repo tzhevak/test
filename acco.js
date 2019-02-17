@@ -7,6 +7,7 @@ for (const item of items) {
 function handleAccoOpening(e){
   const curItem = e.currentTarget;
   const isClosed = curItem.classList.contains("active");
+  e.preventDefault();
 
   if (isClosed){
     closeItemsAndRemoveActive(items);
@@ -20,6 +21,7 @@ function closeItemsAndRemoveActive(items) {
   Array.from(items).forEach(elem => {
     elem.classList.remove("active");
     elem.querySelector(".menu-accordeon__content").style.height = 0;
+    
   } )
 }
 
