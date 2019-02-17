@@ -60,6 +60,13 @@ body {
   }
 }
 
+.text {
+  @include ubuntu(light);
+  color: #fff;
+  font-size: rem(14px);
+  line-height: rem(24.01px);
+}
+
 //tag styles reset
 h1,
 h2,
