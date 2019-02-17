@@ -19,20 +19,16 @@
  .menu-accordeon__text{
    padding: rem(62px) rem(37px) rem(62px) rem(33px);
    height: 100%;
-
-    @include phones {
-     padding: rem(40px) rem(10px) rem(30px) rem(10px);
-    }
   }
 }
-
 @include phones {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  width: 100%
-  }
+  z-index: 1;
+}
 }
 
 .menu-accordeon__item {
