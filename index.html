@@ -13,11 +13,14 @@
     <div class="maincontent">
         <section class="section hero">
           <div class="container hero__container">
-            <header class="header">
+            <header class="header" id="header">
               <div class="logo">
                 <svg class="logo-icon" viewBox="0 0 98.265 74.317">
                   <use xlink:href="sprite.svg#logo"></use>
                 </svg>
+              </div>
+              <div class="menu__close">
+                <a href="#" id="close" class="menu__close-link"></a>
               </div>
               <div class="header__buttons">
                 <nav class="menu">
@@ -46,7 +49,7 @@
                   </ul>
                 </nav>
                 <a href="" class="btn hero__order-btn">Заказать</a>
-                <a class="hamburger-menu-link" href="">
+                <a class="hamburger-menu-link" href="#" id="menu-for-mobile">
                   <div class="hamburger-menu-link__bars"></div>
                 </a>
               </div>
@@ -657,5 +660,6 @@
     </nav>
   </div>
   <script src="acco.js"></script>
+  <script src="header.js"></script>
 </body>
 </html>
