@@ -121,7 +121,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none; }
+  border-style: none;
+  max-width: 100%; }
 
 /* Forms
    ========================================================================== */
@@ -1507,6 +1508,7 @@ p {
   .slider__main {
     margin-bottom: 2.5rem;
     height: 100%;
+    max-height: 500px;
     position: relative;
     overflow: hidden; }
   .slider__controls {
@@ -1552,6 +1554,39 @@ p {
       width: 1.6875rem;
       height: 0.8125rem;
       fill: #fff; }
+  .slider__dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px; }
+    .slider__dots .active img {
+      opacity: 1; }
+    @media screen and (max-width: 480px) {
+      .slider__dots {
+        display: none; } }
+  .slider__dot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent; }
+    .slider__dot img {
+      opacity: 0.3; }
 
 .burger-card {
   position: relative;
