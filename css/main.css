@@ -1633,8 +1633,8 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 31.25rem;
-    max-height: 20.625rem; }
+    width: 505px;
+    height: 329px; }
     @media screen and (max-width: 480px) {
       .burger-card__img {
         max-width: 21.875rem;

@@ -131,8 +131,8 @@
   &__img {
     width: auto;
     display: flex ;
-    max-width: rem(500px) ;
-    max-height: rem(330px) ;
+    width: 505px ;
+    height: 329px ;
     @include phones {
       max-width: rem(350px) ;
       max-height: rem(150px) ;
