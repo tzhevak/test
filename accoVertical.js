@@ -1,4 +1,4 @@
-const items = document.querySelectorAll(".menu-accordeon__item");
+const items = document.querySelectorAll(".team-accordeon__item");
 
 for (const item of items) {
   item.addEventListener('click', handleAccoOpening);
@@ -20,13 +20,13 @@ function handleAccoOpening(e){
 function closeItemsAndRemoveActive(items) {
   Array.from(items).forEach(elem => {
     elem.classList.remove("active");
-    elem.querySelector(".menu-accordeon__content").style.height = 0;
+    elem.querySelector(".team-accordeon__content-wrap").style.height = 0;
     
   } )
 }
 
 function openItem(item) {
-  const content = item.querySelector(".menu-accordeon__content");
+  const content = item.querySelector(".team-accordeon__content-wrap");
   const textBlock = content.firstElementChild;
   //const reqHeight = textBlock.getBoundingClientRect().height;
 

@@ -10,9 +10,13 @@
 
 .slider {
   position: relative;
+  height: rem(479px);
 
   &__main {
     margin-bottom: rem(40px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
   }
 
   &__controls {

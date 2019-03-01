@@ -32,15 +32,6 @@
   //}
 }
 
-.active {
-    .team-accordeon__trigger {
-      color: $yellow;
-      &:before {
-        transform: rotate(-180deg) translateY(40%);
-      }
-    }
-  }
-
 .team-accordeon__trigger {
   color: #fff;
   display: flex;
@@ -78,8 +69,20 @@
 .team-accordeon__content-wrap {
   overflow: hidden;
   height: 0;
-  transition: height;
 }
+
+.team-accordeon__item.active {
+  .team-accordeon__trigger {
+    color: $yellow;
+    &:before {
+      transform: rotate(-180deg) translateY(40%);
+    }
+  }
+  .team-accordeon__content-wrap {
+    height: auto;
+    transition: height .075s;
+  }
+} 
 
 .team-accordeon__content {
   padding-left: rem(19px);
