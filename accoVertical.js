@@ -29,7 +29,6 @@ function openItem(item) {
   const content = item.querySelector(".team-accordeon__content-wrap");
   const textBlock = content.firstElementChild;
   //const reqHeight = textBlock.getBoundingClientRect().height;
-
   item.classList.add("active");
   content.style.height = "100%";
 }
